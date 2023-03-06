@@ -1,0 +1,48 @@
+.modal-container{
+    position:absolute;
+    height: 100vh;
+    width: 100vw;
+    z-index:10;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.modal-box{
+    color: var(--dark-text);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 3px;
+}
+
+.close-img{
+width:100%;
+}
+
+.rules-img{
+    width:100%;
+
+}
+.close-btn{
+    background:none;
+    border: none;
+    align-self: center;
+    color: var(--dark-text);
+}
+.close-btn:hover{
+    cursor: pointer;
+}
+.modal__header{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+    padding:1rem;
+}
+
+.modal__header h1{
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin:0;
+    padding: 0;
+}

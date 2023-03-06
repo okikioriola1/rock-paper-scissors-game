@@ -1,0 +1,73 @@
+.play{
+    width:100%;
+    position:relative;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.triangle{
+    position: absolute;
+    align-self: center;
+    margin-top: 70px;
+}
+
+.items{
+    display: flex;
+    justify-content: center;
+}
+
+.icon{
+    height: 160px;
+    width: 160px;
+    border: 18px solid;
+    border-radius: 50%;
+    transition: transform .2s;
+}
+
+.icon--paper{
+    background-color: #fff;
+    background-image: url("../images/icon-paper.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--paper-gradient);
+    box-shadow: inset 0px 5px 6px grey, 0px 8px darken(var(--paper-gradient), 15%);
+
+    transform: translateX(1.5rem);
+    
+}
+.icon--paper:hover{
+    transform: translateX(1.5rem) scale(1.1);
+
+}
+.icon--scissors{
+    background-color: #fff;
+    background-image: url("../images/icon-scissors.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--scissors-gradient);
+    box-shadow: inset 0px 5px 6px grey, 0px 8px darken(var(--scissors-gradient), 15%);
+    transform: translateX(8rem);
+    z-index: 20;
+
+}
+.icon--scissors:hover{
+    transform: translateX(8rem) scale(1.1);
+
+}
+.icon--rock{
+    background-color: #fff;
+    background-image: url("../images/icon-rock.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-color: var(--rock-gradient);
+    box-shadow: inset 0px 5px 6px grey, 0px 8px darken(var(--rock-gradient), 15%);
+    transform: translateX(-10rem) translateY(13rem);
+}
+
+.icon--rock:hover{
+    transform: translateX(-10rem) translateY(13rem) scale(1.1);
+
+}
